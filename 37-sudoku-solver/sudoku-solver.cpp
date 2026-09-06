@@ -31,7 +31,7 @@ public:
         }
         int nextrow=row;
         int nextcol=col+1;
-        if(col==8){
+        if(col==9){
             nextrow=row+1;
             nextcol=0;
         }
