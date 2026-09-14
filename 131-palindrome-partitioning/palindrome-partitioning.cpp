@@ -1,20 +1,26 @@
 class Solution {
 public:
     bool isPalin(string part){
-        int end=part.length()-1;
-        int st=0;
-        while(st<=end){
-            if(part[st]==part[end]){
+        // int end=part.length()-1;
+        // int st=0;
+        
+        // while(st<=end){
+        //     if(part[st]==part[end]){
                 
-                st++;
-                end--;
-            }
-            else{
-                return false;
-            }
+        //         st++;
+        //         end--;
+        //     }
+        //     else{
+        //         return false;
+        //     }
             
-        }
-        return true;
+        // }
+        // return true;
+        
+        string part2=part;
+        reverse(part.begin(),part.end());
+        return part==part2;
+        
 
        
     }
